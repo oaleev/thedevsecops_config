@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: devsecops
+  name: devsecops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devsecops
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: devsecops
+    spec:
+      containers:
+      - image: manrala/numeric-app:4659127721c426d20372604fd7dcf9b6432a06d3
+        name: numeric-app
+        ports:
+        - containerPort: 8080
