@@ -10,6 +10,7 @@ spec:
     port: 8080
     protocol: TCP
     targetPort: 8080
+    nodePort: 30906
   selector:
     app: devsecops
   type: NodePort
