@@ -6,6 +6,7 @@ metadata:
   name: devsecops
 spec:
   replicas: 2
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: devsecops
