@@ -16,7 +16,7 @@ spec:
         app: devsecops
     spec:
       containers:
-      - image: manrala/numeric-app:084ce6a516b9c24a5478dcbd600ee8dfea3dc05b
+      - image: manrala/numeric-app:797a781ef717abf8b06bcee6e3e63bc9a4df2745
         name: numeric-app
         ports:
         - containerPort: 8080
